@@ -1,41 +1,51 @@
-# LC- 73       This is the first problem i solved
+# LC-73  
+This is the **first problem** I solved.
 
-Today i solved set matrix zeroes problem
-## Problem Statement
- - > you have given a matrix (m*n), If you found an element as 0, mark 
-all its corresponding rows and cols elements as 0.
+Today, I solved the **Set Matrix Zeroes** problem.
 
-I solved this in two ways:-
-1. brute force
-2. better way
+## 🧩 Problem Statement
+- You are given a matrix of size **m × n**.  
+- If any element is `0`, mark **all elements in its corresponding row and column as `0`**.
 
+---
 
-### Brute Force Approach
-In brute force I iterates over the each elements and whenever i found element as "0", I made its corresponding rows and cols as "-1"
+## 💡 Approaches Used
+I solved this problem in **two ways**:
+1. Brute Force
+2. Better Approach
 
-""Why not 0 directly ?""
-- > because it can cause chain reaction and mark wrong elements as 0.
+---
 
-After that again iterate over each elements and compared, if(elem == -1) set it as 0;
-- time complexity => O(m*n) * (m+n)
-- space complexity => O(1)
+## 🔹 Brute Force Approach
+In the brute force approach, I iterated over **each element** of the matrix.  
+Whenever I found an element equal to `0`, I marked all its corresponding **rows and columns as `-1`**.
 
+### ❓ Why not mark them as `0` directly?
+- Because it may cause a **chain reaction** (unexpected effect), where newly set `0`s wrongly affect other rows and columns.
 
-### Better Approach
-In better way, I used two extra arrays for marking-
-(initially all elements are 0 by default).
-1. row array of length n, where n = matrix[0].length
-2. col array of length m, where m = matrix.length
+After the first traversal, I iterated over the matrix again and:
+- If `matrix[i][j] == -1`, I set it to `0`.
 
-""How to mark?""
+### ⏱️ Complexity
+- **Time Complexity:** `O(m × n × (m + n))`
+- **Space Complexity:** `O(1)`
 
-Iterate over the elements and when "0" is encountered make row and col array index as 1, (make both array as "1")
+---
 
-"how to find final answer?""
-Now, iterate over the elements and check either of row or column array contains "1" , if yes then mark M[i][j] = 0.
+## 🔹 Better Approach
+In the better approach, I used **two extra arrays** for marking (initialized with `0` by default):
 
+1. `row[]` array of length `n`  
+   - where `n = matrix[0].length`
+2. `col[]` array of length `m`  
+   - where `m = matrix.length`
 
-- Time complexity => O(m*n)
-- Space complexity => O(m+n)
+### 📝 How to mark?
+- Traverse the matrix.
+- Whenever an element `0` is found:
+  - Mark `row[i] = 1`
+  - Mark `col[j] = 1`
 
-
+### 🧮 How to get the final answer?
+- Traverse the matrix again.
+- If `row[i] == 1` **or** `col[j] == 1`, then set:
