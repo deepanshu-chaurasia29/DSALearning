@@ -8,39 +8,80 @@ public class SetMatrixZeroes {
 
         int[][] matrix = {
                 {1, 2, 2, 3},
-                {2, 4, 0, 3},
+                {2, 0, 0, 3},
                 {1, 2, 3, 5}
         };
-        setZeroes(matrix);
+        setZeroes1(matrix);
         System.out.println(Arrays.deepToString(matrix));
     }
 
+    // Brute force approach
     public static void setZeroes(int[][] matrix) {
         int m = matrix.length;   // no of rows
         int n = matrix[0].length;  // no of columns
 
-        int rowNo = 0;  // 1
-        int colNo = 0;  // 2
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (matrix[i][j] == 0) {
-                    rowNo = i;
-                    colNo = j;
+                    markRow(i, matrix);
+                    markCol(j, matrix);
                 }
             }
         }
-        for (int row = 0; row < m; row++) {
 
-            for (int col = 0; col < n; col++) {
-                if(col == colNo){
-                    matrix[row][colNo] = 0;
-                }
-                if(row == rowNo){
-                    matrix[rowNo][col] = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (matrix[i][j] == -1) {
+                    matrix[i][j] = 0;
                 }
             }
-
         }
 
+
+    }
+
+    // Mark all that row elements as -1
+    public static void markRow(int i,int[][] matrix){
+        for (int j = 0; j < matrix[i].length ; j++) {
+            if(matrix[i][j] != 0) {
+                matrix[i][j] = -1;
+            }
+        }
+    }
+
+    // Mark all that col elements as -1
+    public static void markCol(int j,int[][] matrix){
+        for (int i = 0; i < matrix.length; i++) {
+            if(matrix[i][j] != 0){
+                matrix[i][j] = -1;
+            }
+        }
+    }
+
+
+    // better way
+    public static void setZeroes1(int[][] matrix){
+        int m = matrix.length;   // no of rows
+        int n = matrix[0].length;  // no of columns
+
+        int[] row = new int[matrix[0].length];
+        int[] col = new int[matrix.length];
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if(matrix[i][j] == 0){
+                    row[j] = 1;
+                    col[i] = 1;
+                }
+            }
+        }
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if(row[j] == 1 || col[i] == 1){
+                    matrix[i][j] = 0;
+                }
+            }
+        }
     }
 }
