@@ -19,7 +19,7 @@ I have pushed:
 
 ## 🛠️ Tech Stack
 - Language: **Java**
-- IDE: IntelliJ IDEA / VS Code
+- IDE: IntelliJ IDEA 
 - Platform: GitHub
 
 ---
