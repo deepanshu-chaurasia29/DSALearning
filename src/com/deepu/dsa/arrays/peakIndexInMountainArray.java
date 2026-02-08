@@ -21,6 +21,6 @@ public class peakIndexInMountainArray {
                 s = m + 1;
             }
         }
-        return s;
+        return e;
     }
 }

@@ -18,8 +18,15 @@ public class Rotated_Binary_Search {
         }
     }
     public static int findPivot(int[] arr){
+
         int s = 0;
         int e = arr.length-1;
+
+        // array not rotated
+        if (arr[s] < arr[e]) {
+            return -1;
+        }
+
         while(s <= e){
             int m = s + (e-s)/2;
             //  4cases to find pivot
