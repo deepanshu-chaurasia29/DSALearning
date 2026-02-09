@@ -3,25 +3,29 @@ package com.deepu.dsa.recursion;
 import java.util.Arrays;
 
 public class MergeSort {
+
     static void main() {
-        int[] arr = {3,2,42,6,25,7,};
+        int[] arr = {3, 2, 42, 6, 25, 7};
         arr = sort(arr);
         System.out.println(Arrays.toString(arr));
     }
-    public static int[] sort(int[] arr){
-        if(arr.length == 1){
+
+    public static int[] sort(int[] arr) {
+
+        if (arr.length <= 1) {
             return arr;
         }
 
-        int mid = arr.length /2;
+        int mid = arr.length / 2;
 
-        int[] left = sort(Arrays.copyOfRange(arr,0,mid));
-        int[] right = sort(Arrays.copyOfRange(arr,mid,arr.length));
+        int[] left = sort(Arrays.copyOfRange(arr, 0, mid));
+        int[] right = sort(Arrays.copyOfRange(arr, mid, arr.length));
 
-        return merge(left,right);
+        return merge(left, right);
     }
 
-    public static int[] merge(int[] first,int[] second){
+
+    public static int[] merge(int[] first, int[] second){
         int[] mix = new int[first.length + second.length];
 
         int i = 0;
@@ -53,6 +57,5 @@ public class MergeSort {
             k++;
         }
         return mix;
-
     }
 }
