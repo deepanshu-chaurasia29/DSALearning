@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class QuickSort {
     static void main() {
-        int[] arr = {2,4,1,7,0,8};
+        int[] arr = {2,4,1,7,0,8,5};
         int n = arr.length;
         System.out.println(Arrays.toString(arr));
         quickSort(arr,0,n-1);
@@ -37,8 +37,10 @@ public class QuickSort {
         }
 
         int pivotCorrectIndex = s + count;
-        swap(arr,pivotCorrectIndex,s);
+        swap(arr,pivotCorrectIndex,s);  // Put pivot element at its right place.
 
+
+        // Jab pivot apne sahi place par aa gya to ab hum is se jo element chota h usko left side rakhenge and jo greater hai usko right side.
         // i and j are indices
         int i=s;
         int j=e;
