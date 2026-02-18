@@ -1,1 +1,1 @@
-i completed my bank management project today.
+i did more in project work
