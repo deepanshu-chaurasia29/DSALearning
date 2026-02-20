@@ -16,7 +16,7 @@ public class Armstrong_No {
         }
 
     }
-    static boolean isArmstrong(int n){
+      static boolean isArmstrong(int n){
         int original = n;
         int sum = 0;
         while(n>0){
