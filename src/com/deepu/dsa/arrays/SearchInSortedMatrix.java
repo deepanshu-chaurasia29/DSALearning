@@ -2,7 +2,7 @@ package com.deepu.dsa.arrays;
 
 import java.util.Arrays;
 
-public class SearchInSorted2DMatrix {
+public class SearchInSortedMatrix {
     static void main() {
         int[][] matrix = {
                 {10,20,30,40},
@@ -43,14 +43,14 @@ public class SearchInSorted2DMatrix {
         int cMid = cols/2;
 
         while(rStart <(rEnd-1)){
-            int mid = rStart + (rEnd-rStart)/2;
-            if(target == matrix[mid][cMid]){
-                return new int[]{mid,cMid};
+            int rMid = rStart + (rEnd-rStart)/2;
+            if(target == matrix[rMid][cMid]){
+                return new int[]{rMid,cMid};
             }
-            if(target > matrix[mid][cMid]){
-                rStart = mid;
+            if(target > matrix[rMid][cMid]){
+                rStart = rMid;
             }else{
-                rEnd = mid;
+                rEnd = rMid;
             }
         }
 
