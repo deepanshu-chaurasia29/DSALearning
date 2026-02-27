@@ -1,0 +1,2 @@
+- today i add pin change class of my bank management project.
+- also, some ui ko better kiya
