@@ -1,1 +1,4 @@
 - added balance enquiry page into my project
+- added final page mini statement page.
+- That's all, project ho gya complete.
+- ab ism ekuch fixing karni hai to improve my project like SQL Injection handle,hash pin and many more...
