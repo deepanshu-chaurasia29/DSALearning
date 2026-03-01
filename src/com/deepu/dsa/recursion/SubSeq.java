@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 public class SubSeq {
     static void main() {
-//        subseq("","abc");
-        System.out.println(subseqRet("","abc"));
+        subseqAscii("","abc");
+//        System.out.println(subseqRet("","abc"));
     }
 
     // P -> processed, up -> unprocessed
@@ -37,5 +37,19 @@ public class SubSeq {
 
         return left;
     }
+
+    static void subseqAscii(String p, String up){
+        if(up.isEmpty()){
+            System.out.println(p);
+            return;
+        }
+
+        char ch = up.charAt(0);
+
+        subseq(p+ch,up.substring(1));
+        subseq(p,up.substring(1));
+        subseq(p+(ch+0),up.substring(1));
+    }
+
 
 }
