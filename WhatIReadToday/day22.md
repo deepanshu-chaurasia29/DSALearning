@@ -2,4 +2,6 @@
 - better ui and prevents from sql injection
 - use preparedStatement -> precompiled sql query which makes the structure of query at compile time and values as a string fetch akrta h aur structure ke fill in blanks ke jagah par jaake rakh deta h
 - instead of statement -> execute the query directly to your database
+- use hashing to convert pin into hash code. This code can't be unhashed making our database safe even if someone get access,they can't get the pin directly.
+- add pin change page ,helps when you forgot pin.
 - and small small more fixes are done
