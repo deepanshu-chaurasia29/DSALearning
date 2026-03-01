@@ -1,0 +1,5 @@
+- made atm_management_system_v2 
+- better ui and prevents from sql injection
+- use preparedStatement -> precompiled sql query which makes the structure of query at compile time and values as a string fetch akrta h aur structure ke fill in blanks ke jagah par jaake rakh deta h
+- instead of statement -> execute the query directly to your database
+- and small small more fixes are done
