@@ -1,0 +1,1 @@
+- today i revise the remaining part of git and git hub
