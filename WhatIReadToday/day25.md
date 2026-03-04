@@ -1,1 +1,3 @@
 - today i revise the remaining part of git and git hub
+- participated in STARTER 228D, i solved 3 three question in 7 minutes feeling product at this moment. 
+- I killed, not killed , i just killed the word record.
