@@ -1,2 +1,2 @@
 - Started study AWS course.
-- Completed Half course
+- Completed Half course.
