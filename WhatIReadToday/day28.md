@@ -1,0 +1,1 @@
+- solved only one problem of codechef rating 1000
