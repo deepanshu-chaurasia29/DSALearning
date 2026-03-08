@@ -1,0 +1,3 @@
+- solved three questions 
+- LC - 35
+- codechef rating 804,809
