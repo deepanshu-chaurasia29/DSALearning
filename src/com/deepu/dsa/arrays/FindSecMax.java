@@ -1,6 +1,6 @@
 package com.deepu.dsa.arrays;
 
-public class FindMax {
+public class FindSecMax {
     static void main() {
         int[] arr = {1,3,2,5,3,8,0};
         int max = Integer.MIN_VALUE;

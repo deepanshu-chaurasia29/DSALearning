@@ -1,0 +1,2 @@
+- today i solved 4 problem 
+- lc 1295, lc 283, lc 1920, 1 codeforces(1027a)
