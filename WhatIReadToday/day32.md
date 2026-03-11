@@ -1,0 +1,6 @@
+- 5 lc problem 
+- LeetCode 1929 - Concatenation of Array
+-  LeetCode 1480 - Running Sum of 1D Array
+ - LeetCode 26 - Remove Duplicates from Sorted Array
+ - LeetCode 169 - Majority Element
+ - LeetCode 136 - Single Number
