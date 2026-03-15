@@ -6,10 +6,10 @@ import java.util.ArrayList;
 public class Permutations {
     static void main() {
 
-//        permutation("","abc");
-        ArrayList<String> ans = permutationList("","abcd");
-        System.out.println(ans);
-        System.out.println(permutationCount("","abcd"));
+        permutation("","abc");
+//        ArrayList<String> ans = permutationList("","abcd");
+//        System.out.println(ans);
+//        System.out.println(permutationCount("","abcd"));
     }
     static void permutation(String p,String up){
         if(up.isEmpty()){
