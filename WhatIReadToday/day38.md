@@ -1,0 +1,3 @@
+- lc 643
+- geeks for geeks : - 
+- https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
