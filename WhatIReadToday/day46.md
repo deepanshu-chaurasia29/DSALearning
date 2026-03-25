@@ -1,0 +1,3 @@
+- lc 1572
+- participated in hackathon 
+- cc contest
