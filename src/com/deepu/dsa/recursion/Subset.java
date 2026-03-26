@@ -1,9 +1,8 @@
 package com.deepu.dsa.recursion;
 
-import java.util.AbstractList;
 import java.util.ArrayList;
 
-public class SubSeq {
+public class Subset {
     static void main() {
         subseqAscii("","abc");
 //        System.out.println(subseqRet("","abc"));
