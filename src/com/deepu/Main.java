@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class Main {
     class myRuntimeException extends RuntimeException{
-
         public myRuntimeException(String message){
             super(message);
         }
