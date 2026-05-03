@@ -1,9 +1,12 @@
 package com.deepu.basics.bitwiseOperator;
 
+import java.util.ArrayList;
+
 public class AppearOnce {
     static void main() {
         int[] arr = {2,2,3,4,5,4,4,5,5,2};
         System.out.println(count(arr));
+        ArrayList<Integer> list = new ArrayList<>();
     }
     static int count(int[] arr){
         for (int i = 0; i < arr.length; i++) {
