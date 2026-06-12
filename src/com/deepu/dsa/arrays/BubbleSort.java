@@ -3,11 +3,13 @@ package com.deepu.dsa.arrays;
 import java.util.Arrays;
 
 public class BubbleSort {
+
     public static void main(String[] args) {
         int[] arr = {3,1,5,4,2};
         System.out.println(Arrays.toString(sort(arr)));
 
     }
+
     static int[] sort(int[] arr){
         boolean swapped;
         for (int i = 0; i < arr.length; i++) {
@@ -26,4 +28,5 @@ public class BubbleSort {
         }
         return arr;
     }
+
 }
