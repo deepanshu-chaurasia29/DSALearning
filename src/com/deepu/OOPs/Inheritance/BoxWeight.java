@@ -12,4 +12,8 @@ class BoxWeight extends Box {
         this.weight = weight;
 
     }
+
+    static void greeting(){
+        System.out.println("Heloo jii, you are inside BoxWeight Class");
+    }
 }

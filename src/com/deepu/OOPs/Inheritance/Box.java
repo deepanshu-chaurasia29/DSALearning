@@ -18,6 +18,10 @@ class Box {
         this.h = h;
     }
 
+    static void greeting(){
+        System.out.println("Heloo jii,you are inside Box Class");
+    }
+
 }
 
 
