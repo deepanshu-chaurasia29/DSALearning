@@ -1,4 +1,4 @@
-package com.deepu.OOPs;
+package com.deepu.OOPs.mix;
 
 public class SingletonClass {
 
