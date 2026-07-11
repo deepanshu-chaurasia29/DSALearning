@@ -6,5 +6,8 @@ public interface Engine {
     void start();
     void stop();
     void speed();
+    default void acc(){
+        System.out.println("default method of engine");
+    }
 
 }
