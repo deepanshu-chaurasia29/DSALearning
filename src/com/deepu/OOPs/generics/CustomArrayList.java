@@ -77,6 +77,5 @@ public class CustomArrayList {
 //        list.remove(1);
 //        list.set(4,89);
 //        System.out.println(list);
-        System.out.println((-11) % 2);
     }
 }
