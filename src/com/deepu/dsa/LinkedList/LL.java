@@ -22,6 +22,8 @@ public class LL {
         }
     }
 
+
+
     // Insert at first position in LL
     public void insertFirst(int val){
         Node node=new Node(val);
@@ -63,18 +65,70 @@ public class LL {
         System.out.println("END");
     }
 
-    // Insert in between
-    // to insert new element, we must know the previous and next element information.
-    public void insertInBetween(int value,int preVal, int nextVal){
-        Node node=new Node(value);
-        Node temp=head;
-        if(temp.data == preVal && temp.next.data == nextVal){
-            temp.next = node;
-            node.next = temp.next;
+    // delete from first of LL
+    public int deleteFirst(){
+        int val=head.data;
+        head = head.next;
+
+        if(head == null){
+            tail = null;
         }
-        temp=temp.next;
+        size--;
+        return val;
     }
 
+    // returns the node before the given index
+    public Node get(int index){
+        Node node=head;
+        for (int i = 0; i < index; i++) {
+            node = node.next;
+        }
+        return node;
+    }
+
+    // delete from last of LL
+    public int deleteLast(){
+        if(size <= 1){
+            return deleteFirst();
+        }
+
+        Node secondLast=get(size-2); // return the second last node
+        int value=tail.data;
+        tail = secondLast;
+        tail.next=null;
+        size--;
+
+        return value;
+    }
+
+    // delete from given index
+    public int delete(int index){
+        if(index == 0){
+            return deleteFirst();
+        }
+        if(index == size-1){
+            return deleteLast();
+        }
+
+        Node temp=get(index-1);
+        int val=temp.next.data;
+        temp.next = temp.next.next;
+        return val;
+    }
+
+    // returns Node of the given value
+    public Node getNode(int value){
+        Node tempNode=head;
+        while(tempNode != null){
+            if(tempNode.data == value){
+                return tempNode;
+            }
+        }
+        return null;
+    }
+
+
+    // insert element at given index
     public void insert(int val,int index){
         if(index > size){
             try {
