@@ -20,14 +20,25 @@ public class Main {
 //        list.display();
 //        System.out.println(list.getNode(7));
 
-        DoublyLL list=new DoublyLL();
-        list.insertFirst(1);
-        list.insertFirst(3);
-        list.insertFirst(4);
-        list.insertFirst(7);
-        list.insertFirst(8);
-        list.insertLast(9);
-        list.insert(10,4);
+//        DoublyLL list=new DoublyLL();
+//        list.insertFirst(1);
+//        list.insertFirst(3);
+//        list.insertFirst(4);
+//        list.insertFirst(7);
+//        list.insertFirst(8);
+//        list.insertLast(9);
+//        list.insert(10,4);
+//        list.display();
+
+
+
+        CircularLL list=new CircularLL();
+        list.insert(1);
+        list.insert(3);
+        list.insert(4);
+        list.insert(7);
+        list.insert(80);
+//        list.delete(0);
         list.display();
 
 
