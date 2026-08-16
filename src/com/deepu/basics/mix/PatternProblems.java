@@ -4,6 +4,32 @@ public class PatternProblems {
     public static void main(String[] args) {
         int n = 4;
 
+        // Pattern 07
+//        for(int i=1; i<=n; i++){
+//            // print spaces
+//            for(int j=1; j<=n-i; j++){
+//                System.out.print(" ");
+//            }
+//            // print stars
+//            for(int j=1; j<= 2*i - 1; j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+
+        // pattern 08
+//        for(int i=n; i>=1; i--){
+//            // print spaces
+//            for(int j=1; j<=n-i; j++){
+//                System.out.print(" ");
+//            }
+//            // print stars
+//            for(int j=1; j<= 2*i - 1; j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+
         // pattern 09
 //        for(int i=0; i<n; i++){
 //            for(int j=0; j<n-i-1; j++){
@@ -40,16 +66,16 @@ public class PatternProblems {
 
         // pattern 11
 
-//        for (int i = 0; i < n; i++) {
-//            for (int k = 0; k < i+1; k++) {
-//                if ((i + k) % 2 == 0) {
-//                    System.out.print(1);
-//                } else {
-//                    System.out.print(0);
-//                }
-//            }
-//            System.out.println();
-//        }
+        for (int i = 0; i < n; i++) {
+            for (int k = 0; k < i+1; k++) {
+                if ((i + k) % 2 == 0) {
+                    System.out.print(1);
+                } else {
+                    System.out.print(0);
+                }
+            }
+            System.out.println();
+        }
 
         //  pattern 12
 
@@ -236,13 +262,13 @@ public class PatternProblems {
 //        }
 
         // Pattern 22
-        for (int row = 0; row < 2*n-1; row++) {
-            for (int col = 0; col < 2*n-1; col++) {
-                int atEachIndex = n - Math.min(Math.min(col,2*n-2-col), Math.min(row,2*n-2-row));
-                System.out.print(atEachIndex + " ");
-            }
-            System.out.println();
-        }
+//        for (int row = 0; row < 2*n-1; row++) {
+//            for (int col = 0; col < 2*n-1; col++) {
+//                int atEachIndex = n - Math.min(Math.min(col,2*n-2-col), Math.min(row,2*n-2-row));
+//                System.out.print(atEachIndex + " ");
+//            }
+//            System.out.println();
+//        }
 
     }
 }
