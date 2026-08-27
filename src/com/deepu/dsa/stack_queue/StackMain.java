@@ -1,7 +1,7 @@
 package com.deepu.dsa.stack_queue;
 
 public class StackMain {
-    static void main() throws StackException {
+    public static void main(String[] args) throws StackException {
         CustomStack stack=new DynamicStack(5);  // parent reference , child object
         stack.push(1);
         stack.push(2);
