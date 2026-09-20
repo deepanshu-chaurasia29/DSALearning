@@ -1,13 +1,9 @@
 package com.deepu;
 
 public class Main {
+    static int x=10;
     public static void main(String[] args) {
-        int[] arr=new int[26];
-        for(int i=0; i<26; i++){
-            arr[i] = 'a'+i;
-            System.out.println(arr[i]);
-        }
-
-
+        x = 20;
+      System.out.println(x);
     }
 }
