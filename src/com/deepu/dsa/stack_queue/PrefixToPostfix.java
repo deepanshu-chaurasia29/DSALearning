@@ -3,7 +3,7 @@ package com.deepu.dsa.stack_queue;
 import java.util.Stack;
 
 public class PrefixToPostfix {
-  static void main() {
+  static void main(String[] args) {
     String s="/-AB*+DEF";
     System.out.println(prefixToPostfix(s));
   }
